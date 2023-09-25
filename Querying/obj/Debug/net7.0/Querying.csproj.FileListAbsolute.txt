@@ -1,0 +1,5 @@
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Querying\obj\Debug\net7.0\Querying.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Querying\obj\Debug\net7.0\Querying.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Querying\obj\Debug\net7.0\Querying.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Querying\obj\Debug\net7.0\Querying.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Querying\obj\Debug\net7.0\Querying.csproj.CoreCompileInputs.cache

@@ -1,0 +1,5 @@
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson12_Persisting_The_Data_Delete\obj\Debug\net7.0\Lesson12_Persisting_The_Data_Delete.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson12_Persisting_The_Data_Delete\obj\Debug\net7.0\Lesson12_Persisting_The_Data_Delete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson12_Persisting_The_Data_Delete\obj\Debug\net7.0\Lesson12_Persisting_The_Data_Delete.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson12_Persisting_The_Data_Delete\obj\Debug\net7.0\Lesson12_Persisting_The_Data_Delete.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson12_Persisting_The_Data_Delete\obj\Debug\net7.0\Lesson12_Persisting_The_Data_Delete.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\bin\Debug\net7.0\CodeFirst.deps.json
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\bin\Debug\net7.0\CodeFirst.runtimeconfig.json
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\bin\Debug\net7.0\CodeFirst.dll
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\bin\Debug\net7.0\CodeFirst.pdb
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.csproj.CoreCompileInputs.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.dll
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\refint\CodeFirst.dll
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.pdb
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\CodeFirst.genruntimeconfig.cache
+C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\CodeFirst\obj\Debug\net7.0\ref\CodeFirst.dll
