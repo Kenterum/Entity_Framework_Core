@@ -1,0 +1,5 @@
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\RandomDataCreate\obj\Debug\net7.0\RandomDataCreate.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\RandomDataCreate\obj\Debug\net7.0\RandomDataCreate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\RandomDataCreate\obj\Debug\net7.0\RandomDataCreate.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\RandomDataCreate\obj\Debug\net7.0\RandomDataCreate.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\RandomDataCreate\obj\Debug\net7.0\RandomDataCreate.csproj.CoreCompileInputs.cache

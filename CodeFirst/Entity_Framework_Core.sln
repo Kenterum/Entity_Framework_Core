@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson12_Persisting_The_Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Querying", "..\Querying\Querying.csproj", "{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeTracker", "..\ChangeTracker\ChangeTracker.csproj", "{976911AE-E829-42E5-BCC7-C380D26648B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDataCreate", "..\RandomDataCreate\RandomDataCreate.csproj", "{8F9E2D4E-9454-47FF-9C6E-AFB736689070}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976911AE-E829-42E5-BCC7-C380D26648B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976911AE-E829-42E5-BCC7-C380D26648B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976911AE-E829-42E5-BCC7-C380D26648B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976911AE-E829-42E5-BCC7-C380D26648B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F9E2D4E-9454-47FF-9C6E-AFB736689070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9E2D4E-9454-47FF-9C6E-AFB736689070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9E2D4E-9454-47FF-9C6E-AFB736689070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9E2D4E-9454-47FF-9C6E-AFB736689070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

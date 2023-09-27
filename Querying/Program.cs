@@ -83,7 +83,7 @@ ECommerceDbContext context = new();
 
 
 
-#endregion 
+#endregion
 
 #region Where 
 
@@ -119,7 +119,7 @@ ECommerceDbContext context = new();
 
 //await urunler.ToListAsync();
 //await urunler2.ToListAsync();
-#endregion 
+#endregion
 
 
 #region ThenBy 
@@ -158,7 +158,7 @@ ECommerceDbContext context = new();
 
 
 
-#endregion 
+#endregion
 
 #endregion
 
@@ -299,7 +299,7 @@ ECommerceDbContext context = new();
 
 
 
-#endregion 
+#endregion
 
 
 #region LongCountAsync
@@ -378,7 +378,7 @@ ECommerceDbContext context = new();
 
 //var urunler = await context.Urunler.Where(u => u.UrunAdi.Contains("7")).ToListAsync();
 
-#endregion 
+#endregion
 
 #region StartsWith 
 //Like '...%' sorgusunu olusturmamizi saglar 
@@ -499,22 +499,36 @@ ECommerceDbContext context = new();
 #endregion
 
 #region Query Syntax 
-var datas = await (from urun in context.Urunler
-            group urun by urun.Fiyat
-            into @group
-            select new
-            {
-                Fiyat = @group.Key,
-                Count = @group.Count()
-            }).ToListAsync();
+//var datas = await (from urun in context.Urunler
+//                   group urun by urun.Fiyat
+//            into @group
+//                   select new
+//                   {
+//                       Fiyat = @group.Key,
+//                       Count = @group.Count()
+//                   }).ToListAsync();
 
-            #endregion
-
-
-            #endregion
+#endregion
+#endregion
 
 
-        Console.WriteLine();
+
+#region Foreach Fonksiyonu
+//Sorgulama fonksiyonu degildir
+//Sorgulama neticesinde elde edilen koleksiyonel veriler uzerinde iterasyonel olarak donemmizi ve teker teker vileri elde edip islemelr yapabilmemmizi saglayan bir fonksiyondur
+//forach dongusunun metot halidir!
+//foreach (var item in datas)
+//{
+
+//}
+
+//datas.Foreach(x =>
+//{
+
+//});
+#endregion
+
+Console.WriteLine();
 
 public class ECommerceDbContext : DbContext
 {
