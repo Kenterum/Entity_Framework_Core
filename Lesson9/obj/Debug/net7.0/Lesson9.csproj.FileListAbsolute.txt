@@ -12,3 +12,8 @@ C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson9\ob
 C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.pdb
 C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.genruntimeconfig.cache
 C:\Users\suleyman.mammadov\source\repos\Ef_Core\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\ref\Lesson9.dll
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Lesson9\obj\Debug\net7.0\Lesson9.csproj.CoreCompileInputs.cache

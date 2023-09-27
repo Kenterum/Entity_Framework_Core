@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tIC15ghkjV2qVszVwfOYTznN6zLE7NMaj05OvLPHo7uXs/Uxfek+Tuh8E20iZvkkCAj/TC3tmsno7l1Cz7XvlQ==",
+  "dgSpecHash": "41gNs03qoj3iDlbaR5gocDtI9MszX12qThK/SrkI4pN5R31P/taxfpKyZrcSqSF42LD2WN/VXBgQ/khFmIbQpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
+  "projectFilePath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

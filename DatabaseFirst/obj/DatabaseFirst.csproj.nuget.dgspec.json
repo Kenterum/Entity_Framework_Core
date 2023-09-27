@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj": {}
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj": {
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj",
+        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj",
         "projectName": "DatabaseFirst",
-        "projectPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj",
+        "projectPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\DatabaseFirst\\DatabaseFirst.csproj",
         "packagesPath": "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\DatabaseFirst\\obj\\",
+        "outputPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\DatabaseFirst\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,13 +45,7 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.11, )"
             }

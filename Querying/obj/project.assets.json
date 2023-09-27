@@ -2891,11 +2891,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Querying\\Querying.csproj",
+      "projectUniqueName": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Querying\\Querying.csproj",
       "projectName": "Querying",
-      "projectPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Querying\\Querying.csproj",
+      "projectPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Querying\\Querying.csproj",
       "packagesPath": "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Querying\\obj\\",
+      "outputPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Querying\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4TokrzGsqAGNWb0mhD9mtMziKiZi8H9x3HLkTVcWm7TAfpiR7EeooBZTVw+/+LHSCx6JxcbFB78qG7jrGeKHmQ==",
+  "dgSpecHash": "t92uKKiIJm3k72e6TDvLiHXXK7tOjRkxFpCjUBhrqsc/9DuSnBOu+uoukaYPTG6RdTGBSt8HdxEZdrXpR6U7xA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
+  "projectFilePath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

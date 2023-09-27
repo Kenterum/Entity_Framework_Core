@@ -5,17 +5,15 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFirst", "CodeFirst.csproj", "{A3718D2B-04AE-4FBB-A53D-9BBAD1085F7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseFirst", "..\DatabaseFirst\DatabaseFirst.csproj", "{D0A38F1E-E564-4D16-B9A6-EEFC478A6C45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseFirst", "..\DatabaseFirst\DatabaseFirst.csproj", "{D0A38F1E-E564-4D16-B9A6-EEFC478A6C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9", "..\Lesson9\Lesson9.csproj", "{7C6AC4ED-B4DB-4EF1-AD02-CFD49745DB21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson10_Persisting_The_Data", "..\Lesson10_Persisting_The_Data\Lesson10_Persisting_The_Data.csproj", "{3223C41B-9A26-49EC-9055-C463BF309F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_Persisting_The_Data", "..\Lesson10_Persisting_The_Data\Lesson10_Persisting_The_Data.csproj", "{3223C41B-9A26-49EC-9055-C463BF309F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson11_Persisting_The_Data_Update", "..\Lesson11_Persisting_The_Data_Update\Lesson11_Persisting_The_Data_Update.csproj", "{A8A9D281-1CBF-47CD-9620-998A7478CFE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_Persisting_The_Data_Update", "..\Lesson11_Persisting_The_Data_Update\Lesson11_Persisting_The_Data_Update.csproj", "{A8A9D281-1CBF-47CD-9620-998A7478CFE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson12_Persisting_The_Data_Delete", "..\Lesson12_Persisting_The_Data_Delete\Lesson12_Persisting_The_Data_Delete.csproj", "{4EA27BFA-5309-4E03-B228-37F18FF7D3BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_Persisting_The_Data_Delete", "..\Lesson12_Persisting_The_Data_Delete\Lesson12_Persisting_The_Data_Delete.csproj", "{4EA27BFA-5309-4E03-B228-37F18FF7D3BF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Querying", "..\Querying\Querying.csproj", "{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Querying", "..\Querying\Querying.csproj", "{4ACDBD81-0D81-4D8B-880C-D94237F5B3EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{D0A38F1E-E564-4D16-B9A6-EEFC478A6C45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A38F1E-E564-4D16-B9A6-EEFC478A6C45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A38F1E-E564-4D16-B9A6-EEFC478A6C45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C6AC4ED-B4DB-4EF1-AD02-CFD49745DB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C6AC4ED-B4DB-4EF1-AD02-CFD49745DB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C6AC4ED-B4DB-4EF1-AD02-CFD49745DB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C6AC4ED-B4DB-4EF1-AD02-CFD49745DB21}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3223C41B-9A26-49EC-9055-C463BF309F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3223C41B-9A26-49EC-9055-C463BF309F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3223C41B-9A26-49EC-9055-C463BF309F73}.Release|Any CPU.ActiveCfg = Release|Any CPU

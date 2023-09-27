@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj": {}
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj": {
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj",
+        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj",
         "projectName": "Lesson11_Persisting_The_Data_Update",
-        "projectPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj",
+        "projectPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\Lesson11_Persisting_The_Data_Update.csproj",
         "packagesPath": "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\obj\\",
+        "outputPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson11_Persisting_The_Data_Update\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

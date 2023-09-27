@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj": {}
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj": {
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
+        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
         "projectName": "Lesson12_Persisting_The_Data_Delete",
-        "projectPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
+        "projectPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\Lesson12_Persisting_The_Data_Delete.csproj",
         "packagesPath": "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\obj\\",
+        "outputPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson12_Persisting_The_Data_Delete\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

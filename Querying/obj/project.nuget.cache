@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ycYbF9VRf59aXFKWc28gaT7XIne/7woslWhamTME/hv4IJjq7AgVI28cmm+rk9jLIXoEaBpegP835cEtgjmRg==",
+  "dgSpecHash": "umCgcnh851UbxraOyQFj7NchkfyXg9IHkRBkKBzZFgf9BQALmSfYWampKxDgEZE8hdqPb10uFoSIYTj9o6B2FA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Querying\\Querying.csproj",
+  "projectFilePath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Querying\\Querying.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

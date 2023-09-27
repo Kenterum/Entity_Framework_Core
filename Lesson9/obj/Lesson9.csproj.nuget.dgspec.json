@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj": {}
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj": {
+    "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
+        "projectUniqueName": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
         "projectName": "Lesson9",
-        "projectPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
+        "projectPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\Lesson9.csproj",
         "packagesPath": "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\Lesson9\\obj\\",
+        "outputPath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\Lesson9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

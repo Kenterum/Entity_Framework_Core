@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5VDq16/1bLKLbZdF0vszgaezQ/t4H40VouMANlJFTiISJUSUqi/yGDaD14hLHvOOUWD0nOe+blkCbWfpzKjwVw==",
+  "dgSpecHash": "tPn1crLqcQGGeZAu8UY3jt3b8nyHhrADiSdM7Kola1nznJzLhjN3FK8qsh/k2UJzjF1HLvMrp5zYG1PLHD/gfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\suleyman.mammadov\\source\\repos\\Ef_Core\\Entity_Framework_Core\\CodeFirst\\CodeFirst.csproj",
+  "projectFilePath": "C:\\Users\\suleyman.mammadov\\Source\\Repos\\Entity_Framework_Core\\CodeFirst\\CodeFirst.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\suleyman.mammadov\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

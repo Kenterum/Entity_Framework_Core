@@ -239,7 +239,7 @@ public class ECommerceDbContext : DbContext
 
     public DbSet<UrunParca> UrunParca { get; set; }
 
-
+    public DbSet<UrunDetay> UrunDetay { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
@@ -269,6 +269,8 @@ public class Parca
 
     public string ParcaAdi { get; set; }
 
+    public string Parcalar { get; set; }
+
 }
 
 public class UrunParca
@@ -282,3 +284,10 @@ public class UrunParca
     public Parca Parca { get; set; }
 }
 
+public class UrunDetay
+{
+    public int Id { get; set; }
+
+    public float Fiyat { get; set; }
+
+}
