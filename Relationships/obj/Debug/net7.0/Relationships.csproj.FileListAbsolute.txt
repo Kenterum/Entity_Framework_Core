@@ -1,8 +1,3 @@
-C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.csproj.AssemblyReference.cache
-C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.AssemblyInfoInputs.cache
-C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.AssemblyInfo.cs
-C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.csproj.CoreCompileInputs.cache
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\Relationships.exe
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\Relationships.deps.json
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\Relationships.runtimeconfig.json
@@ -60,6 +55,11 @@ C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.csproj.AssemblyReference.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.AssemblyInfoInputs.cache
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.AssemblyInfo.cs
+C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.csproj.CoreCompileInputs.cache
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.csproj.CopyComplete
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\Relationships.dll
 C:\Users\suleyman.mammadov\Source\Repos\Entity_Framework_Core\Relationships\obj\Debug\net7.0\refint\Relationships.dll
