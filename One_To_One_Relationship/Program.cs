@@ -67,8 +67,9 @@ ESirketDbContext context = new();
 #endregion
 
 #region Fluent API 
-
-
+//Navigation propertyler tanimlanmali
+//Fluent API yonteminde entity'ler arasindaki iliski context sinigi icerisinde OnModelCreating fonksiyonun override edilerek metotlar araciligiyla tasarlanmasi gerekmektedir.
+//Yani tum sorumluluk bu fonksiyon icerisindeki calismalardadir  
 public class Calisan
 {
     public int Id { get; set; }
