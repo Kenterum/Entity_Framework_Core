@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 ESirketDbContext context = new();
-
+//GitChange Lesson 22
 
 #region Default Convention 
 //Her iki entity'de Navigation property ile birbirlerini tekil olarak referans edereik fiziksel
