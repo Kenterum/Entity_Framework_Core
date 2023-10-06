@@ -104,56 +104,192 @@ ApplicationsDbContext context = new();
 
 //Post post = new()
 //{
-//    Title = "Post 6"
-//    Blog = new() {Name = "B Blog"}
+//    Title = "Post 6",
+//    Blog = new() { Name = "B Blog" }
 //};
 
-//await context.AddAsync(post);   
+//await context.AddAsync(post);
 //await context.SaveChangesAsync();
 
 
+
+
 #endregion
 
-#region 3.Yontem -> DEVAM EDILECEK
+#region 3.Yontem -> Foreign Key Kolonu Uzerinden Veri Ekleme
+//Birinci ve ikinci yontemler, hic olmayan verilerin iliskisel olarak eklenmesini saglarken, bu 3. yonrem onceden eklenmis olan bir principal entity verisiyle yeni 
+//dependent entitylerin iliskisel olarak elestirilmesini saglamaktadir
+
+
+//Post post = new()
+//{
+//    BlogId = 1,
+//    Title = "Post 7"
+//};
+
+//await context.AddAsync(post);
+//await context.SaveChangesAsync();
 
 #endregion
 
 
-public class Blog
+//public class Blog
+//{
+//    public Blog()
+//    {
+//        Posts = new HashSet<Post>();
+
+//    }
+//    public int Id { get; set; }
+//    public string Name { get; set; }
+
+//    public ICollection<Post> Posts { get; set; }
+
+
+//}
+
+//public class Post
+//{
+
+//    public int Id { get; set; }
+
+//    //[ForeignKey(nameof(Blog))]
+//    public int BlogId { get; set; }
+//    public string Title { get; set; }
+//    public Blog Blog { get; set; }
+//}
+
+//public class ApplicationsDbContext : DbContext
+//{
+
+//    public DbSet<Blog> Blogs { get; set; }
+//    public DbSet<Post> Posts { get; set; }
+//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//    {
+//        optionsBuilder.UseSqlServer(
+//            "Server =.; Database=ApplicationDb; Trusted_Connection=True;TrustServerCertificate=True");
+//    }
+//}
+#endregion
+
+
+#region Many to Many İlişkisel Senaryolarda Veri Ekleme
+#region 1. Yöntem
+//n t n ilişkisi eğer ki default convention üzerinden tasarlanmışsa kullanılan bir yöntemdir.
+
+//Book book = new()
+//{
+//    BookName = "A Kitabı",
+//    Authors = new HashSet<Author>()
+//    {
+//        new(){ AuthorName = "Hilmi" },
+//        new(){ AuthorName = "Ayşe" },
+//        new(){ AuthorName = "Fatma" },
+//    }
+//};
+
+//await context.Books.AddAsync(book);
+//await context.SaveChangesAsync();
+
+
+
+//class Book
+//{
+//    public Book()
+//    {
+//        Authors = new HashSet<Author>();
+//    }
+//    public int Id { get; set; }
+//    public string BookName { get; set; }
+
+//    public ICollection<Author> Authors { get; set; }
+//}
+
+//class Author
+//{
+//    public Author()
+//    {
+//        Books = new HashSet<Book>();
+//    }
+//    public int Id { get; set; }
+//    public string AuthorName { get; set; }
+
+//    public ICollection<Book> Books { get; set; }
+//}
+#endregion
+#region 2. Yöntem
+//n t n ilişkisi eğer ki fluent api ile tasarlanmışsa kullanılan bir yöntemdir.
+
+Author author = new()
 {
-    public Blog()
-    {
-        Posts = new HashSet<Post>();
+AuthorName = "Mustafa",
+Books = new HashSet<AuthorBook>() {
+        new(){ BookId = 1},
+        new(){ Book = new () { BookName = "B Kitap" } }
+    }
+};
 
+await context.AddAsync(author);
+await context.SaveChangesAsync();
+
+class Book
+{
+    public Book()
+    {
+        Authors = new HashSet<AuthorBook>();
     }
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string BookName { get; set; }
 
-    public ICollection<Post> Posts { get; set; }
-
-
+    public ICollection<AuthorBook> Authors { get; set; }
 }
 
-public class Post
+class AuthorBook
 {
+    public int BookId { get; set; }
+    public int AuthorId { get; set; }
+    public Book Book { get; set; }
+    public Author Author { get; set; }
+}
 
+class Author
+{
+    public Author()
+    {
+        Books = new HashSet<AuthorBook>();
+    }
     public int Id { get; set; }
+    public string AuthorName { get; set; }
 
-    //[ForeignKey(nameof(Blog))]
-    public int BlogId { get; set; }
-    public string Title { get; set; }
-    public Blog Blog { get; set; }
+    public ICollection<AuthorBook> Books { get; set; }
 }
+#endregion
 
-public class ApplicationsDbContext : DbContext
+
+
+class ApplicationsDbContext : DbContext
 {
-
-    public DbSet<Blog> Blogs { get; set; }
-    public DbSet<Post> Posts { get; set; }
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Author> Authors { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(
-            "Server =.; Database=ApplicationDb; Trusted_Connection=True;TrustServerCertificate=True");
+        optionsBuilder.UseSqlServer("Server =.; Database=ApplicationDb; Trusted_Connection=True;TrustServerCertificate=True");
+    }
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<AuthorBook>()
+            .HasKey(ba => new { ba.AuthorId, ba.BookId });
+
+        modelBuilder.Entity<AuthorBook>()
+            .HasOne(ba => ba.Book)
+            .WithMany(b => b.Authors)
+            .HasForeignKey(ba => ba.BookId);
+
+        modelBuilder.Entity<AuthorBook>()
+            .HasOne(ba => ba.Author)
+            .WithMany(b => b.Books)
+            .HasForeignKey(ba => ba.AuthorId);
     }
 }
 #endregion
+
