@@ -37,12 +37,10 @@ ApplicationsDbContext context = new();
 
 
 #region ID number degistirme denemesi 
-Author author = await context.Authors
-    .Include(a => a.AuthorName)
-    .FirstOrDefaultAsync(a => a.Id == 4);
+//Author author = await context.Authors.SingleOrDefaultAsync(a => a.Id == 4);
+//author.Id=
 
-Console.WriteLine(author);  
-
+//context.Authors.Update()
 //await context.SaveChangesAsync();
 
 #endregion 
