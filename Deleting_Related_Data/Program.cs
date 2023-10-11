@@ -25,13 +25,71 @@ ApplicationsDbContext context = new();
 #endregion
 
 #region Many to Many Iliskisel Senaryolarda Veri Silme
+////Kitabin yazarla olan bagini koparma 
+//Book book = await context.Books
+//    .Include(b => b.Authors)
+//    .FirstOrDefaultAsync(b => b.Id == 5);
+
+//Author author = book.Authors.FirstOrDefault(a => a.Id == 5);
+//// context.Authors.Remove(author); ---> Bu yazari silmeye kalkar girme bu topa 
+
+//book.Authors.Remove(author);
+//await context.SaveChangesAsync();
+
+#endregion
+
+#region Saving Blog 
+//Blog blog = new()
+//{
+//    Name = "Kenterum's Blog",
+//    Posts = new List<Post>
+//    {
+//        new(){ Title = "1. Post "},
+//        new(){ Title = "2. Post "},
+//        new(){ Title = "3. Post "}
 
 
+//    }
+//};
+
+//await context.Blogs.AddAsync(blog);
+//await context.SaveChangesAsync();
+#endregion
+#region Cascade Delete
+//Bu davranis modelleri Fluent API ile konfigure edilebillmektedir.
+#region Cascade
+//Esas tablodan silinen veri ile karsi/bagimli tabloda bulunan iliskili verilerin silinmesini saglar 
+
+//Blog blog = await context.Blogs.FindAsync(1);
+//context.Blogs.Remove(blog);
+//await context.SaveChangesAsync();
+
+#endregion
+
+#region SetNull
+//Esas tablodan silinen veri ile karsi/bagimli tabloda bulunan iliskili verilere null degerin atanmasini saglar
+//One to One senraryolarinda eger ki Foreign Keyy ve primary key kolonlari ayni ise o zaman SetNull davranisini
+//Kulllanamayiz!!!
+
+//Blog? blog = await context.Blogs.FindAsync(4);
+//context.Blogs.Remove(blog);
+//await context.SaveChangesAsync();
 
 
 #endregion
 
-#region Cascade Delete
+#region Restrict 
+//Esas tablodan herhangi bir veir silinmeye calisildiginde o veriye karsilik dependent table'da iliskisel 
+//veriler varsa eger, bu silme islemini engellemesini saglar  
+
+
+Blog? blog = await context.Blogs.FindAsync(5);
+context.Blogs.Remove(blog);
+await context.SaveChangesAsync();
+
+
+
+#endregion
 
 #endregion
 
@@ -81,7 +139,7 @@ public class Post
     public int Id { get; set; }
 
     //[ForeignKey(nameof(Blog))]
-    public int BlogId { get; set; }
+    public int? BlogId { get; set; }
     public string Title { get; set; }
     public Blog Blog { get; set; }
 }
@@ -131,5 +189,18 @@ class ApplicationsDbContext : DbContext
             .HasOne(a => a.Person)
             .WithOne(p => p.Address)
             .HasForeignKey<Address>(a => a.Id);
+        // Cascade icin gecerli: Eger Persondan her hangi bir veri silinirse buna karsilik adress tablosunda iliskisel data var ise onu da silecek  
+
+        modelBuilder.Entity<Post>()
+            .HasOne(p => p.Blog)
+            .WithMany(b => b.Posts)
+            .IsRequired(false)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        // .OnDelete(DeleteBehavior.SetNull);
+
+        modelBuilder.Entity<Book>()
+            .HasMany(b => b.Authors)
+            .WithMany(a => a.Books);
     }
 }
