@@ -5,22 +5,22 @@ ApplicationsDbContext context = new();
 
 #region One to One iliskisel Senaryolarda Veri Guncelleme  
 #region Saving
-//Person person = new()
-//{
-//    Name = "Suleyman",
-//    Address = new()
-//    {
-//        PersonAddress = "Baku/Azerbaycan"
-//    }
-//};
-//Person person2 = new()
-//{
-//    Name = "Dogukan"
-//};
+Person person = new()
+{
+    Name = "Suleyman",
+    Address = new()
+    {
+        PersonAddress = "Baku/Azerbaycan"
+    }
+};
+Person person2 = new()
+{
+    Name = "Dogukan"
+};
 
-//await context.AddAsync(person);
-//await context.AddAsync(person2);
-//await context.SaveChangesAsync();
+await context.AddAsync(person);
+await context.AddAsync(person2);
+await context.SaveChangesAsync();
 
 #endregion
 
@@ -75,7 +75,7 @@ ApplicationsDbContext context = new();
 //    }
 //};
 
-//await context.Blogs.AddAsync(blog); 
+//await context.Blogs.AddAsync(blog);
 //await context.SaveChangesAsync();
 #endregion
 
@@ -184,17 +184,17 @@ ApplicationsDbContext context = new();
 //};
 #endregion
 
-Book? book = await context.Books
-    .Include(b => b.Authors)
-    .FirstOrDefaultAsync(b => b.Id == 4);
-Author silinecekYazar = book.Authors.FirstOrDefault(a => a.Id == 7);
-book.Authors.Remove(silinecekYazar);
+//Book? book = await context.Books
+//    .Include(b => b.Authors)
+//    .FirstOrDefaultAsync(b => b.Id == 4);
+//Author silinecekYazar = book.Authors.FirstOrDefault(a => a.Id == 7);
+//book.Authors.Remove(silinecekYazar);
 
-//Author? Author2 = await context.Authors.FindAsync(4);
-//book.Authors.Add(Author2);
-//book.Authors.Add(new() { AuthorName = "4. Yazar" });
+////Author? Author2 = await context.Authors.FindAsync(4);
+////book.Authors.Add(Author2);
+////book.Authors.Add(new() { AuthorName = "4. Yazar" });
 
-await context.SaveChangesAsync(); 
+//await context.SaveChangesAsync(); 
 #endregion
 
 
