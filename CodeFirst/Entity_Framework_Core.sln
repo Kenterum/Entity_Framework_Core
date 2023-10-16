@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Updating_Related_Data", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deleting_Related_Data", "..\Deleting_Related_Data\Deleting_Related_Data.csproj", "{810A51BB-A1CE-418F-9E29-AEB99893042E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backing_Fields", "..\Backing_Fields\Backing_Fields.csproj", "{83B4A486-6200-4DE9-83CF-2FAA9EC3A2B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backing_Fields", "..\Backing_Fields\Backing_Fields.csproj", "{83B4A486-6200-4DE9-83CF-2FAA9EC3A2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shadow_Property", "..\Shadow_Property\Shadow_Property.csproj", "{9E133445-D9C8-47A1-BB51-613F79EA3B6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shadow_Property", "..\Shadow_Property\Shadow_Property.csproj", "{9E133445-D9C8-47A1-BB51-613F79EA3B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef_Core_Configurations", "..\Ef_Core_Configurations\Ef_Core_Configurations.csproj", "{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{9E133445-D9C8-47A1-BB51-613F79EA3B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E133445-D9C8-47A1-BB51-613F79EA3B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E133445-D9C8-47A1-BB51-613F79EA3B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
