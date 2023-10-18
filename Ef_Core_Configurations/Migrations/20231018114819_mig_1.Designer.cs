@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ef_Core_Configurations.Migrations
 {
     [DbContext(typeof(ApplicationsDbContext))]
-    partial class ApplicationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231018114819_mig_1")]
+    partial class mig_1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,8 +56,38 @@ namespace Ef_Core_Configurations.Migrations
                     b.ToTable("Departmens");
                 });
 
+            modelBuilder.Entity("Entity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("X")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Entities");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Entity");
+
+                    b.UseTphMappingStrategy();
+                });
+
             modelBuilder.Entity("Example", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<int>("Computed")
                         .HasColumnType("int");
 
@@ -63,6 +96,8 @@ namespace Ef_Core_Configurations.Migrations
 
                     b.Property<int>("Y")
                         .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.ToTable("Examples");
                 });
@@ -127,6 +162,26 @@ namespace Ef_Core_Configurations.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("People");
+                });
+
+            modelBuilder.Entity("A", b =>
+                {
+                    b.HasBaseType("Entity");
+
+                    b.Property<int>("Y")
+                        .HasColumnType("int");
+
+                    b.HasDiscriminator().HasValue("A");
+                });
+
+            modelBuilder.Entity("B", b =>
+                {
+                    b.HasBaseType("Entity");
+
+                    b.Property<int>("Z")
+                        .HasColumnType("int");
+
+                    b.HasDiscriminator().HasValue("B");
                 });
 
             modelBuilder.Entity("Flight", b =>

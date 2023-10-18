@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ef_Core_Configurations.Migrations
 {
     [DbContext(typeof(ApplicationsDbContext))]
-    [Migration("20231016114337_mig_1")]
-    partial class mig_1
+    [Migration("20231018122341_mig_4")]
+    partial class mig_4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,22 @@ namespace Ef_Core_Configurations.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Airport", b =>
+                {
+                    b.Property<int>("AirportID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AirportID"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("AirportID");
+
+                    b.ToTable("Airports");
+                });
 
             modelBuilder.Entity("Department", b =>
                 {
@@ -40,6 +56,32 @@ namespace Ef_Core_Configurations.Migrations
                     b.ToTable("Departmens");
                 });
 
+            modelBuilder.Entity("Flight", b =>
+                {
+                    b.Property<int>("FlightID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlightID"));
+
+                    b.Property<int?>("ArrivalAirportId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DepartureAirportId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FlightID");
+
+                    b.HasIndex("ArrivalAirportId");
+
+                    b.HasIndex("DepartureAirportId");
+
+                    b.ToTable("Flights");
+                });
+
             modelBuilder.Entity("Person", b =>
                 {
                     b.Property<int>("Id")
@@ -51,16 +93,13 @@ namespace Ef_Core_Configurations.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("DId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("DepartmentId")
+                    b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("RomVersion")
+                    b.Property<byte[]>("RowVersion")
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("rowversion");
@@ -69,6 +108,7 @@ namespace Ef_Core_Configurations.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Surname")
+                        .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -78,13 +118,37 @@ namespace Ef_Core_Configurations.Migrations
                     b.ToTable("People");
                 });
 
+            modelBuilder.Entity("Flight", b =>
+                {
+                    b.HasOne("Airport", "ArrivalAirport")
+                        .WithMany("ArrivingFlight")
+                        .HasForeignKey("ArrivalAirportId");
+
+                    b.HasOne("Airport", "DepartureAirport")
+                        .WithMany("DepartingFlights")
+                        .HasForeignKey("DepartureAirportId");
+
+                    b.Navigation("ArrivalAirport");
+
+                    b.Navigation("DepartureAirport");
+                });
+
             modelBuilder.Entity("Person", b =>
                 {
                     b.HasOne("Department", "Department")
                         .WithMany("People")
-                        .HasForeignKey("DepartmentId");
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Department");
+                });
+
+            modelBuilder.Entity("Airport", b =>
+                {
+                    b.Navigation("ArrivingFlight");
+
+                    b.Navigation("DepartingFlights");
                 });
 
             modelBuilder.Entity("Department", b =>
