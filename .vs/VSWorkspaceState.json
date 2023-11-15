@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Ef_Core_Configurations"
   ],
-  "SelectedNode": "\\Entity_Framework_Core.sln",
+  "SelectedNode": "\\Ef_Core_Configurations\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

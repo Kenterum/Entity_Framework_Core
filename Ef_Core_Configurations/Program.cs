@@ -69,7 +69,7 @@ ApplicationsDbContext context = new();
 #endregion
 
 #region Unicode - IsUnicode
-//Kolon icerisinde unicaode karakterler kullanilacaksa bu yapilanma kullanilir.    
+//Kolon icerisinde unicode karakterler kullanilacaksa bu yapilanma kullanilir.    
 #endregion
 
 #region Comment - HasComment 
