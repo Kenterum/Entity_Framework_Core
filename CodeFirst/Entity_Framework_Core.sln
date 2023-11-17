@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backing_Fields", "..\Backin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shadow_Property", "..\Shadow_Property\Shadow_Property.csproj", "{9E133445-D9C8-47A1-BB51-613F79EA3B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ef_Core_Configurations", "..\Ef_Core_Configurations\Ef_Core_Configurations.csproj", "{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ef_Core_Configurations", "..\Ef_Core_Configurations\Ef_Core_Configurations.csproj", "{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generated_Values", "..\Generated_Values\Generated_Values.csproj", "{35D32E67-F918-4CAF-9B71-0C71DF8C420B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F30D6BA-6C35-46EC-B0FE-6E3F74A95A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D32E67-F918-4CAF-9B71-0C71DF8C420B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D32E67-F918-4CAF-9B71-0C71DF8C420B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D32E67-F918-4CAF-9B71-0C71DF8C420B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D32E67-F918-4CAF-9B71-0C71DF8C420B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
