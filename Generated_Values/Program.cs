@@ -61,10 +61,13 @@ ApplicationsDbContext context = new();
 #endregion
 #region DatabaseGeneratedOption.Identity - ValueGeneratedOnAdd
 //Her hangi bir kolona Identity ozelligini vermemizi saglayan bir konfigurasyondur.
-#region Sayisal Turlerler
+#region Sayisal Turler
+//Eger ki Identity ozelligi bir tabloda sayisal olan bir kolonda kullanilacaksa o durumda ilgili tablodaki pk olan kolondan ozellikle iradeli bir sekilde identity ozelliginin kaldirilmasi gerekmektedir(none)
+
 #endregion
 
 #region Sayisal Olmayan Turlerde
+//Eger ki Identity ozelligi bir tabloda sayisal olmayan bir kolonda kullanilacaksa o durumda ilgili tablodaki pk olan kolondan iradeli bir sekilde identity ozelliginin kaldirilmasina gerek yoktur  
 #endregion
 
 
@@ -80,13 +83,11 @@ ApplicationsDbContext context = new();
 
 Person p = new()
 {
-    PersonId = 1,
     Name = "Erdem",
     Surname = "Isler",
 
     Premium = 10,
     TotalGain = 110,
-    PersonCode = 1
 };
 
 await context.Persons.AddAsync(p);
@@ -95,7 +96,7 @@ await context.SaveChangesAsync();
 
 class Person
 {
-    [DatabaseGenerated(DatabaseGeneratedOption.None)]
+    //[DatabaseGenerated(DatabaseGeneratedOption.None)]
     public int PersonId { get; set; } 
     public string Name { get; set; }
     public string Surname { get; set; }
@@ -103,7 +104,7 @@ class Person
     public int Salary { get; set; }
     public int TotalGain { get; set; }
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int PersonCode { get; set; } 
+    public int  PersonCode { get; set; } 
 
 }
 
@@ -124,6 +125,9 @@ class ApplicationsDbContext : DbContext
         modelBuilder.Entity<Person>()
             .Property(p => p.PersonId)
             .ValueGeneratedNever();
+        //modelBuilder.Entity<Person>()
+        //    .Property(p => p.PersonCode)
+        //    .HasDefaultValueSql("NEWID()");
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
