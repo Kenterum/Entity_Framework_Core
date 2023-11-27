@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
 
 ESirketDbContext context = new();
 
@@ -61,7 +60,7 @@ ESirketDbContext context = new();
 
 class Calisan //Dependent Entity    
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
 
     public int DId { get; set; } //Ornek olarak koyuldu. Bir spesifik foreignkey olmasa da ef core kendisi belirleyebilir  
     public string Adi { get; set; }

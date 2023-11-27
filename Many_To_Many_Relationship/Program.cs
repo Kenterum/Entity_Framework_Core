@@ -102,11 +102,11 @@ public class Yazar
 
 public class EKitapDbContext : DbContext
 {
- 
-    public DbSet<Kitap> Kitaplar { get; set; } 
 
-    public DbSet<Yazar> Yazarlar { get; set; }  
-   
+    public DbSet<Kitap> Kitaplar { get; set; }
+
+    public DbSet<Yazar> Yazarlar { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(

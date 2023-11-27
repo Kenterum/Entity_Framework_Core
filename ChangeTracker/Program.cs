@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Xml.Schema;
 
 ECommerceDbContext context = new();
 

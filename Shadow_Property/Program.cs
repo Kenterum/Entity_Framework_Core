@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Emit;
-using System.Reflection.Metadata;
 
 ApplicationsDbContext context = new();
 
@@ -78,7 +76,7 @@ Post post1 = new()
 
 public class Blog
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
     public string Name { get; set; }
     public ICollection<Post> Posts { get; set; }
 }
@@ -87,13 +85,13 @@ public class Blog
 
 public class Post
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
     public string Title { get; set; }
     [ForeignKey(nameof(Blog))]
-    public int BlogId { get; set; } 
-    public bool lastUpdated { get; set; }   
+    public int BlogId { get; set; }
+    public bool lastUpdated { get; set; }
     public Blog Blog { get; set; }
-    
+
 }
 
 

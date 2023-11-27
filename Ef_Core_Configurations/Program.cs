@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Emit;
-using System.Reflection.Metadata;
 
 ApplicationsDbContext context = new();
 
@@ -208,9 +206,9 @@ class Person
     //public int Id2 { get; set; }
     //public int DId { get; set; }
     //[Column("Adi", TypeName = "metin", Order = 7)]
-    public int DepartmentId { get; set; }    
+    public int DepartmentId { get; set; }
     public string _name;
-    public string Name { get => _name ; set => _name = value;}
+    public string Name { get => _name; set => _name = value; }
     //[Required]
     //[MaxLength(13)]
     //[StringLength(13)]
@@ -231,13 +229,13 @@ class Person
     public DateTime CreatedDate { get; set; }
     public Department Department { get; set; }
 
-    
+
 }
 class Department
 {
-    public int Id { get; set; } 
-    public string Name { get; set; }    
-   public ICollection<Person> People { get; set; }  
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public ICollection<Person> People { get; set; }
 
 }
 class Example
@@ -274,7 +272,7 @@ class ApplicationsDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-  
+
         #region GetEntityTypes
         //var entities =  modelBuilder.Model.GetEntityTypes();
         //foreach (var entity in entities)
@@ -437,7 +435,7 @@ public class Flight
     [ForeignKey(nameof(ArrivalAirport))]
     public int? ArrivalAirportId { get; set; } // Make it nullable
 
-    public string Name { get; set; }  
+    public string Name { get; set; }
 
     public virtual Airport DepartureAirport { get; set; }
     public virtual Airport ArrivalAirport { get; set; }

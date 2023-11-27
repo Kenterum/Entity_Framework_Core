@@ -206,7 +206,7 @@ public class Person
     public int Id { get; set; }
     public string Name { get; set; }
 
-    public Address Address{ get; set; } 
+    public Address Address { get; set; }
 }
 public class Address
 {
@@ -269,12 +269,12 @@ class Author
 class ApplicationsDbContext : DbContext
 {
 
-    public DbSet<Person> People { get; set; }   
+    public DbSet<Person> People { get; set; }
     public DbSet<Address> Addresses { get; set; }
-    public DbSet<Blog> Blogs { get; set; }  
+    public DbSet<Blog> Blogs { get; set; }
     public DbSet<Post> Posts { get; set; }
     public DbSet<Book> Books { get; set; }
-    public DbSet<Author> Authors { get; set; }  
+    public DbSet<Author> Authors { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

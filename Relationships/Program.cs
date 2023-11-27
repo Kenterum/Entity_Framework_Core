@@ -115,7 +115,7 @@ ECommerceDbContext context = new();
 
 public class ECommerceDbContext : DbContext
 {
-  
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -128,10 +128,10 @@ public class ECommerceDbContext : DbContext
 public class Calisan
 {
     public int Id { get; set; }
-    public string CalisanAdi {get; set; }
-    public int DepartmanId { get; set; }    
+    public string CalisanAdi { get; set; }
+    public int DepartmanId { get; set; }
 
-    public Departman Departman {  get; set; } //Navigation Property
+    public Departman Departman { get; set; } //Navigation Property
 }
 public class Departman
 {
@@ -139,5 +139,5 @@ public class Departman
 
     public string DepartmanAdi { get; set; }
 
-    public ICollection<Calisan> Calisanlar { get; set; }    
+    public ICollection<Calisan> Calisanlar { get; set; }
 }

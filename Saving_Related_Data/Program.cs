@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
 
 ApplicationsDbContext context = new();
 
@@ -222,8 +221,8 @@ ApplicationsDbContext context = new();
 
 Author author = new()
 {
-AuthorName = "Mustafa",
-Books = new HashSet<AuthorBook>() {
+    AuthorName = "Mustafa",
+    Books = new HashSet<AuthorBook>() {
         new(){ BookId = 1},
         new(){ Book = new () { BookName = "B Kitap" } }
     }

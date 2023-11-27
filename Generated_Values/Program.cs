@@ -1,12 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
-using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore.SqlServer;
-using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Net.Mime;
 
 ApplicationsDbContext context = new();
 
@@ -75,7 +68,7 @@ ApplicationsDbContext context = new();
 
 #endregion
 #region DatabaseGeneratedOption.Computed - ValueGeneratedOnAddOrUpdate
-
+//EF Core uzerinde bir kolon Computed column ise ister Compited olarak belirleyebilirsin istersen de belirtmedne kullanmaya devam edebilirsin 
 #endregion
 
 #endregion
@@ -97,14 +90,14 @@ await context.SaveChangesAsync();
 class Person
 {
     //[DatabaseGenerated(DatabaseGeneratedOption.None)]
-    public int PersonId { get; set; } 
+    public int PersonId { get; set; }
     public string Name { get; set; }
     public string Surname { get; set; }
     public int Premium { get; set; }
     public int Salary { get; set; }
     public int TotalGain { get; set; }
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int  PersonCode { get; set; } 
+    public int PersonCode { get; set; }
 
 }
 
@@ -121,7 +114,8 @@ class ApplicationsDbContext : DbContext
         //.HasDefaultValue(100);
         modelBuilder.Entity<Person>()
             .Property(p => p.TotalGain)
-            .HasComputedColumnSql("([Salary] + [Premium]) *10");
+            .HasComputedColumnSql("([Salary] + [Premium]) *10")
+            .ValueGeneratedOnAddOrUpdate();
         modelBuilder.Entity<Person>()
             .Property(p => p.PersonId)
             .ValueGeneratedNever();
