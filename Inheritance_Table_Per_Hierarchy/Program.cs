@@ -56,13 +56,33 @@ ApplicationsDbContext context = new();
 //await context.SaveChangesAsync();
 
 
-var customers = await context.Customers.ToListAsync();
+//var customers = await context.Customers.ToListAsync();
 
-context.Customers.RemoveRange(customers);
+//context.Customers.RemoveRange(customers);
 
-await context.SaveChangesAsync();
+//await context.SaveChangesAsync();
 
-#endregion 
+#endregion
+#region TPH De Veri Guncelleme 
+//TPH davranisinda guncelleme operasyonu yine entity uzerinden gerceklestirilir 
+
+//Employee guncellenecek  = await context.Employees.FindAsync(7);
+//guncellenecek.Name = "Sulo";
+//await context.SaveChangesAsync();
+#endregion
+#region TPH'de Veri Sorgulama 
+//Veri sorgulama operasyonu bilinen DbSet propertysi uzerinden sorgulanir. Ancak burada dikkat edilmesi gerekn bir husus vardir O da sudur.
+//var employees = await context.Employees.ToListAsync();
+//var techs = await context.Technicians.ToListAsync();
+
+//Kalitimsal iliskiye gore yapilan sorgulamada ust sinif alt siniftaki verileride kapsamaktadir. O yuzden ust siniflarin sorgulamalarinda alt siniflarin verileride gelecektir. 
+//Sorgulama Sureclerinde Ef Core generate edilen sorguya bir where sarti eklemektedir
+
+#endregion
+#region Farkli Entity'ler de Ayni Isimde sutunlarin oldugu Durumlar
+//Entitylerde mukerrer kolonlar olabilir. Bu kolonlari EF Core isimler olarak ozellestirip ayiracaktir.
+#endregion
+
 class Person
 {
     public int Id { get; set; } 
@@ -76,12 +96,13 @@ class Employee : Person
 }
 class Customer : Person
 {
+    public int A {  get; set; }
     public string? CompanyName { get; set; }
 }
 class Technician : Employee
 {
+    public int A { get; set; }  
     public string? Branch { get; set; }
-
 }
 
 
